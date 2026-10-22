@@ -10,7 +10,7 @@
   "polling": {
     "dji": 5,
     "flipkart": 15,
-    "amazon": 30
+    "amazon": 15
   },
   "products": [
     {
@@ -26,8 +26,7 @@
         {
           "retailer": "amazon",
           "label": "Amazon.in",
-          "url": "https://www.amazon.in/dp/B0C783YNW7",
-          "optional": true
+          "url": "https://www.amazon.in/dp/B0C783YNW7"
         }
       ]
     },
@@ -49,8 +48,7 @@
         {
           "retailer": "amazon",
           "label": "Amazon.in",
-          "url": "https://www.amazon.in/dp/B0C783J9WC",
-          "optional": true
+          "url": "https://www.amazon.in/dp/B0C783J9WC"
         }
       ]
     },
@@ -91,8 +89,7 @@
         {
           "retailer": "amazon",
           "label": "Amazon.in",
-          "url": "https://www.amazon.in/dp/B0DYD56G2Y",
-          "optional": true
+          "url": "https://www.amazon.in/dp/B0DYD56G2Y"
         }
       ]
     }

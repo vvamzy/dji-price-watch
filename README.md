@@ -11,16 +11,20 @@ Runs on GitHub Actions every 5 minutes. No server, no database, no paid APIs.
 
 | SKU | DJI India | Flipkart | Amazon.in |
 |---|---|---|---|
-| Osmo Action 4 Standard Combo | — | ✅ | ⚠️ optional |
-| Osmo Action 4 Adventure Combo | ✅ | ✅ | ⚠️ optional |
-| Osmo Nano 64GB | ✅ | ✅ | — |
-| Osmo Nano 128GB | ✅ | ✅ | ⚠️ optional |
+| Osmo Action 4 Standard Combo | — | ✅ | ✅ |
+| Osmo Action 4 Adventure Combo | ✅ | ✅ | ✅ |
+| Osmo Nano 64GB | ✅ | ✅ | — (no listing found) |
+| Osmo Nano 128GB | ✅ | ✅ | ✅ |
 
 - **DJI India** (`djiindiashop.com`, the official importer) is a Shopify store, so prices come from
   its public product JSON. Most reliable source.
 - **Flipkart** pages carry a schema.org price block. Stable, but blocks datacenter IPs occasionally.
-- **Amazon.in** is best-effort only. GitHub runner IPs get captchas and HTTP 503 fairly often, so
-  these sources are marked `optional` and never raise a "tracker broken" email.
+- **Amazon.in** is scraped from the **mobile** product endpoint (`/gp/aw/d/ASIN`) with a mobile
+  user agent. The desktop page (`/dp/ASIN`) is captcha-walled from GitHub runner IPs — zero
+  successes out of nine measured attempts — while the mobile page answers roughly two times in
+  three. Each poll therefore retries up to five times with jitter, which puts the effective failure
+  rate under 1%. The price is read from the embedded `"priceAmount"` field; the visible
+  `.a-offscreen` element holds the MRP and is deliberately ignored.
 
 ---
 
@@ -121,7 +125,7 @@ Set `cooldownHours` to `0` to be notified on every downward move (noisier, but a
 "polling": {
   "dji": 5,
   "flipkart": 15,
-  "amazon": 30
+  "amazon": 15
 }
 ```
 
@@ -155,7 +159,8 @@ Append to the `products` array:
 - `id` must be unique — it is the key in the state file. Renaming it resets that product's history.
 - `retailer` must be `dji`, `flipkart` or `amazon`.
 - `variant` (optional) picks a Shopify variant by its title, e.g. `"64 GB"`.
-- `optional: true` means failures are logged but never emailed as a health problem.
+- `optional: true` means failures are logged but never emailed as a health problem. All current
+  sources are required, since every adapter now retries internally.
 - `label` is the text shown in the email.
 
 ### Removing a source
@@ -216,7 +221,7 @@ src/lib/mailer.js             Gmail SMTP transport
 src/lib/state.js              state load/save helpers
 src/sources/dji.js            Shopify JSON adapter
 src/sources/flipkart.js       JSON-LD + bankOfferGrid adapter
-src/sources/amazon.js         best-effort ASIN adapter
+src/sources/amazon.js         mobile-endpoint ASIN adapter (retrying)
 state/prices.json             persisted prices, watermarks, email budget
 .github/workflows/price-check.yml   the 5-minute cron
 ```
@@ -227,8 +232,11 @@ state/prices.json             persisted prices, watermarks, email budget
 
 - **Timing.** GitHub's minimum cron is 5 minutes, and scheduled runs are queued best-effort.
   Expect drops to arrive 5–12 minutes after they happen, sometimes longer at peak times.
-- **Amazon.** Genuinely unreliable from GitHub IPs. Treat it as a bonus, not a guarantee.
-  If you want it solid, a Keepa API key (~€19/year) replaces that adapter with real price history.
+- **Amazon.** Reliable now, but only through the mobile endpoint, and it is still scraping. A poll
+  can spend up to five attempts before it gets a page; occasionally all five fail and that poll is
+  logged as a miss (it is not treated as a price change, and three such polls in a row raise a
+  health email). If Amazon ever hardens the mobile page too, the paid escape hatch is Keepa — note
+  its API now starts around €49/month, not the €19/year quoted in older guides.
 - **Flipkart.** The listed price is tracked, not EMI, exchange, or coupon discounts. Bank/card
   offers are tracked separately because they are the ones that reliably stack.
 - **Public repo.** Prices and state commits are public. Credentials are not — they live only in
