@@ -1,0 +1,100 @@
+{
+  "$comment": "Edit this file to add products, remove retailers, or change polling cadence. See README.md.",
+  "currency": "INR",
+  "alert": {
+    "mode": "watermark",
+    "cooldownHours": 1,
+    "dailyEmailCap": 12,
+    "minSecondsBetweenEmails": 60
+  },
+  "polling": {
+    "dji": 5,
+    "flipkart": 15,
+    "amazon": 30
+  },
+  "products": [
+    {
+      "id": "action4-standard",
+      "name": "DJI Osmo Action 4 Standard Combo",
+      "short": "Action 4 Standard",
+      "offers": [
+        {
+          "retailer": "flipkart",
+          "label": "Flipkart",
+          "url": "https://www.flipkart.com/dji-osmo-action-4-standard-combo-sports-camera/p/itmc32cd2451d693"
+        },
+        {
+          "retailer": "amazon",
+          "label": "Amazon.in",
+          "url": "https://www.amazon.in/dp/B0C783YNW7",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "action4-adventure",
+      "name": "DJI Osmo Action 4 Adventure Combo",
+      "short": "Action 4 Adventure",
+      "offers": [
+        {
+          "retailer": "dji",
+          "label": "DJI India",
+          "url": "https://djiindiashop.com/products/dji-osmo-action-4-adventure-combo.js"
+        },
+        {
+          "retailer": "flipkart",
+          "label": "Flipkart",
+          "url": "https://www.flipkart.com/dji-osmo-action-4-adventure-combo-sports-camera/p/itm173f5d9302c2d"
+        },
+        {
+          "retailer": "amazon",
+          "label": "Amazon.in",
+          "url": "https://www.amazon.in/dp/B0C783J9WC",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "nano-64",
+      "name": "DJI Osmo Nano 64GB",
+      "short": "Osmo Nano 64GB",
+      "offers": [
+        {
+          "retailer": "dji",
+          "label": "DJI India",
+          "url": "https://djiindiashop.com/products/osmo-nano.js",
+          "variant": "64 GB"
+        },
+        {
+          "retailer": "flipkart",
+          "label": "Flipkart",
+          "url": "https://www.flipkart.com/dji-osmo-nano-standard-combo-64gb-sports-action-camera/p/itm2e0744ef47a28"
+        }
+      ]
+    },
+    {
+      "id": "nano-128",
+      "name": "DJI Osmo Nano 128GB",
+      "short": "Osmo Nano 128GB",
+      "offers": [
+        {
+          "retailer": "dji",
+          "label": "DJI India",
+          "url": "https://djiindiashop.com/products/osmo-nano.js",
+          "variant": "128 GB"
+        },
+        {
+          "retailer": "flipkart",
+          "label": "Flipkart",
+          "url": "https://www.flipkart.com/dji-osmo-nano-standard-combo-128gb-sports-action-camera/p/itmd76383581a451"
+        },
+        {
+          "retailer": "amazon",
+          "label": "Amazon.in",
+          "url": "https://www.amazon.in/dp/B0DYD56G2Y",
+          "optional": true
+        }
+      ]
+    }
+  ]
+}
