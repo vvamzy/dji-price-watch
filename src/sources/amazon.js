@@ -51,6 +51,7 @@ export async function fetchPrice(offer) {
       if (body.length < 50000) throw new Error('Amazon bot-check page');
 
       const price = extractPrice(body);
+      const { bankOffers, bestBankDiscount } = extractOffers(body);
 
       if (price == null) {
         // A full product page with no price is genuinely unavailable, not a
@@ -60,6 +61,8 @@ export async function fetchPrice(offer) {
           currency: 'INR',
           available: false,
           compareAt: null,
+          bankOffers,
+          bestBankDiscount,
           title: extractTitle(body),
           variantTitle: null,
           productUrl: `https://www.amazon.in/dp/${asin}`,
@@ -71,6 +74,8 @@ export async function fetchPrice(offer) {
         currency: 'INR',
         available: true,
         compareAt: null,
+        bankOffers,
+        bestBankDiscount,
         title: extractTitle(body),
         variantTitle: null,
         productUrl: `https://www.amazon.in/dp/${asin}`,
@@ -112,4 +117,41 @@ function extractTitle(html) {
     .replace(/\s+/g, ' ')
     .trim()
     .slice(0, 160);
+}
+
+/**
+ * Immediate payment offers from the buybox ("smx") widget.
+ *
+ * Amazon does not place a bank-offer list in the HTML the way Flipkart does.
+ * What it does embed is the best *full-payment* card and its guaranteed
+ * discount, shaped like:
+ *
+ *   "Amazon Pay ICICI Bank Credit Card" ... "-₹658" ... "Plus ₹670 cashback"
+ *
+ * Everything else on the offers screen is EMI, which is not a discount, so it
+ * is deliberately not treated as one. Cashback is reported as a note but never
+ * subtracted from the effective price, because it is not applied at checkout.
+ */
+export function extractOffers(html) {
+  const best = new Map();
+  const re =
+    /<span class="a-size-small">\s*([^<]{3,70}?)\s*<\/span>\s*<\/div>\s*<div class="a-section cardification-combo-header-money">\s*-?₹\s?([\d,]+)\s*<\/div>([\s\S]{0,1200}?)(?=<div class="a-section cardification-combo-header-money|<\/li>|<\/ol>|$)/g;
+
+  let m;
+  while ((m = re.exec(html))) {
+    const bank = m[1].trim();
+    const discount = Number(m[2].replace(/,/g, ''));
+    if (!bank || !Number.isFinite(discount) || discount <= 0) continue;
+    if (/^(plus\b|emi\b)/i.test(bank)) continue;
+
+    const cash = m[3].match(/Plus\s*₹\s?([\d,]+)\s*cashback/i);
+    const note = cash ? `+ ₹${Number(cash[1].replace(/,/g, '')).toLocaleString('en-IN')} cashback` : '';
+
+    const key = bank.toLowerCase();
+    const current = best.get(key);
+    if (!current || current.discount < discount) best.set(key, { bank, discount, note });
+  }
+
+  const bankOffers = [...best.values()].sort((a, b) => b.discount - a.discount || a.bank.localeCompare(b.bank));
+  return { bankOffers, bestBankDiscount: bankOffers.length ? bankOffers[0].discount : 0 };
 }

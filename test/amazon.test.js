@@ -1,7 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
 
-import { extractPrice, asinFromUrl } from '../src/sources/amazon.js';
+import { extractPrice, extractOffers, asinFromUrl } from '../src/sources/amazon.js';
+
+const fixture = (name) => fs.readFileSync(path.join(import.meta.dirname, 'fixtures', name), 'utf8');
 
 // Shape of the mobile product page: the embedded priceAmount is the real
 // selling price, while .a-offscreen holds the MRP.
@@ -35,4 +39,16 @@ test('amazon: extracts ASIN from every supported url shape', () => {
 test('amazon: rejects non-numeric junk', () => {
   assert.equal(extractPrice('<script>"priceAmount":null</script>'), null);
   assert.equal(extractPrice('<script>"priceAmount":0</script>'), null);
+});
+
+test('amazon: reads the buybox card discount and cashback note', () => {
+  const { bankOffers, bestBankDiscount } = extractOffers(fixture('amazon-mobile.html'));
+  assert.equal(bestBankDiscount, 658);
+  assert.deepEqual(bankOffers, [
+    { bank: 'Amazon Pay ICICI Bank Credit Card', discount: 658, note: '+ ₹670 cashback' },
+  ]);
+});
+
+test('amazon: no buybox offers means no offers, not a crash', () => {
+  assert.deepEqual(extractOffers('<html><body>nothing</body></html>'), { bankOffers: [], bestBankDiscount: 0 });
 });

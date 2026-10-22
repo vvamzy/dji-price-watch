@@ -73,7 +73,7 @@ function bankCard(a) {
   const list = a.offers
     .map(
       (o) =>
-        `<li style="margin:2px 0">${esc(o.bank)} — <strong>${coin(o.discount)} off</strong></li>`
+        `<li style="margin:2px 0">${esc(o.bank)} — <strong>${coin(o.discount)} off</strong>${o.note ? ` <span style="color:#6b7280">(${esc(o.note)})</span>` : ''}</li>`
     )
     .join('');
 
