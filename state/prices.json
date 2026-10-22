@@ -1,10 +1,249 @@
 {
   "version": 1,
-  "products": {},
+  "products": {
+    "action4-standard": {
+      "offers": {
+        "flipkart": {
+          "price": 22990,
+          "compareAt": null,
+          "currency": "INR",
+          "available": true,
+          "watermark": 22990,
+          "lowestEver": 22990,
+          "lastSeenAt": "2026-10-22T18:56:10.262Z",
+          "lastPolledAt": "2026-10-22T18:56:10.262Z",
+          "lastAlertAt": null,
+          "fails": 0,
+          "lastError": null,
+          "bankOffers": [
+            {
+              "bank": "HDFC",
+              "discount": 1250
+            },
+            {
+              "bank": "Flipkart Axis",
+              "discount": 1150
+            },
+            {
+              "bank": "Flipkart SBI",
+              "discount": 1150
+            }
+          ],
+          "bestBankDiscount": 1250,
+          "effectivePrice": 21740,
+          "bankHash": "1672e322b1bb",
+          "effectiveWatermark": 21740,
+          "effectiveLow": 21740
+        },
+        "amazon": {
+          "price": null,
+          "compareAt": null,
+          "currency": "INR",
+          "available": null,
+          "watermark": null,
+          "lowestEver": null,
+          "lastSeenAt": null,
+          "lastPolledAt": "2026-10-22T18:56:10.262Z",
+          "lastAlertAt": null,
+          "fails": 1,
+          "lastError": "HTTP 503 for www.amazon.in"
+        }
+      }
+    },
+    "action4-adventure": {
+      "offers": {
+        "dji": {
+          "price": 31990,
+          "compareAt": 54990,
+          "currency": "INR",
+          "available": true,
+          "watermark": 31990,
+          "lowestEver": 31990,
+          "lastSeenAt": "2026-10-22T18:56:10.262Z",
+          "lastPolledAt": "2026-10-22T18:56:10.262Z",
+          "lastAlertAt": null,
+          "fails": 0,
+          "lastError": null,
+          "effectivePrice": 31990,
+          "bankHash": "none",
+          "effectiveWatermark": 31990,
+          "effectiveLow": 31990
+        },
+        "flipkart": {
+          "price": 31990,
+          "compareAt": null,
+          "currency": "INR",
+          "available": true,
+          "watermark": 31990,
+          "lowestEver": 31990,
+          "lastSeenAt": "2026-10-22T18:56:10.262Z",
+          "lastPolledAt": "2026-10-22T18:56:10.262Z",
+          "lastAlertAt": null,
+          "fails": 0,
+          "lastError": null,
+          "bankOffers": [
+            {
+              "bank": "Flipkart Axis",
+              "discount": 2350
+            },
+            {
+              "bank": "HDFC",
+              "discount": 1750
+            },
+            {
+              "bank": "Flipkart SBI",
+              "discount": 1600
+            }
+          ],
+          "bestBankDiscount": 2350,
+          "effectivePrice": 29640,
+          "bankHash": "cbe99b05136e",
+          "effectiveWatermark": 29640,
+          "effectiveLow": 29640
+        },
+        "amazon": {
+          "price": 31990,
+          "compareAt": null,
+          "currency": "INR",
+          "available": true,
+          "watermark": 31990,
+          "lowestEver": 31990,
+          "lastSeenAt": "2026-10-22T18:56:10.262Z",
+          "lastPolledAt": "2026-10-22T18:56:10.262Z",
+          "lastAlertAt": null,
+          "fails": 0,
+          "lastError": null,
+          "effectivePrice": 31990,
+          "bankHash": "none",
+          "effectiveWatermark": 31990,
+          "effectiveLow": 31990
+        }
+      }
+    },
+    "nano-64": {
+      "offers": {
+        "dji": {
+          "price": 29990,
+          "compareAt": 35990,
+          "currency": "INR",
+          "available": true,
+          "watermark": 29990,
+          "lowestEver": 29990,
+          "lastSeenAt": "2026-10-22T18:56:10.262Z",
+          "lastPolledAt": "2026-10-22T18:56:10.262Z",
+          "lastAlertAt": null,
+          "fails": 0,
+          "lastError": null,
+          "effectivePrice": 29990,
+          "bankHash": "none",
+          "effectiveWatermark": 29990,
+          "effectiveLow": 29990
+        },
+        "flipkart": {
+          "price": 28990,
+          "compareAt": null,
+          "currency": "INR",
+          "available": true,
+          "watermark": 28990,
+          "lowestEver": 28990,
+          "lastSeenAt": "2026-10-22T18:56:10.262Z",
+          "lastPolledAt": "2026-10-22T18:56:10.262Z",
+          "lastAlertAt": null,
+          "fails": 0,
+          "lastError": null,
+          "bankOffers": [
+            {
+              "bank": "Flipkart Axis",
+              "discount": 2200
+            },
+            {
+              "bank": "HDFC",
+              "discount": 1750
+            },
+            {
+              "bank": "Flipkart SBI",
+              "discount": 1450
+            }
+          ],
+          "bestBankDiscount": 2200,
+          "effectivePrice": 26790,
+          "bankHash": "7620fde36620",
+          "effectiveWatermark": 26790,
+          "effectiveLow": 26790
+        }
+      }
+    },
+    "nano-128": {
+      "offers": {
+        "dji": {
+          "price": 34990,
+          "compareAt": 42990,
+          "currency": "INR",
+          "available": true,
+          "watermark": 34990,
+          "lowestEver": 34990,
+          "lastSeenAt": "2026-10-22T18:56:10.262Z",
+          "lastPolledAt": "2026-10-22T18:56:10.262Z",
+          "lastAlertAt": null,
+          "fails": 0,
+          "lastError": null,
+          "effectivePrice": 34990,
+          "bankHash": "none",
+          "effectiveWatermark": 34990,
+          "effectiveLow": 34990
+        },
+        "flipkart": {
+          "price": 33990,
+          "compareAt": null,
+          "currency": "INR",
+          "available": true,
+          "watermark": 33990,
+          "lowestEver": 33990,
+          "lastSeenAt": "2026-10-22T18:56:10.262Z",
+          "lastPolledAt": "2026-10-22T18:56:10.262Z",
+          "lastAlertAt": null,
+          "fails": 0,
+          "lastError": null,
+          "bankOffers": [
+            {
+              "bank": "Flipkart Axis",
+              "discount": 2450
+            },
+            {
+              "bank": "HDFC",
+              "discount": 1750
+            },
+            {
+              "bank": "Flipkart SBI",
+              "discount": 1700
+            }
+          ],
+          "bestBankDiscount": 2450,
+          "effectivePrice": 31540,
+          "bankHash": "8c2710e561a8",
+          "effectiveWatermark": 31540,
+          "effectiveLow": 31540
+        },
+        "amazon": {
+          "price": null,
+          "compareAt": null,
+          "currency": "INR",
+          "available": null,
+          "watermark": null,
+          "lowestEver": null,
+          "lastSeenAt": null,
+          "lastPolledAt": "2026-10-22T18:56:10.262Z",
+          "lastAlertAt": null,
+          "fails": 1,
+          "lastError": "HTTP 503 for www.amazon.in"
+        }
+      }
+    }
+  },
   "meta": {
-    "createdAt": null,
-    "lastRunAt": null,
-    "lastCommitAt": null,
+    "createdAt": "2026-10-22T18:56:10.262Z",
+    "lastRunAt": "2026-10-22T18:56:10.262Z",
+    "lastCommitAt": "2026-10-22T18:56:10.262Z",
     "sent": {
       "date": null,
       "count": 0,
