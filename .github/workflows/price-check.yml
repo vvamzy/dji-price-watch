@@ -2,9 +2,10 @@ name: price-check
 
 on:
   schedule:
-    # Every 5 minutes (GitHub's floor). Actual start is best-effort and often
-    # a few minutes late under load. Per-store cadence is enforced in code.
-    - cron: '*/5 * * * *'
+    # Every 15 minutes. GitHub's floor is 5, but the schedule is best-effort
+    # and often a few minutes late under load. Per-store cadence is enforced
+    # in code.
+    - cron: '*/15 * * * *'
   workflow_dispatch:
     inputs:
       dry_run:

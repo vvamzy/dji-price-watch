@@ -3,7 +3,7 @@
 Watches DJI **Osmo Action 4** and **Osmo Nano** prices in India and emails you the moment
 something gets cheaper — either the listed price or the bank/card offer stacked on top of it.
 
-Runs on GitHub Actions every 5 minutes. No server, no database, no paid APIs.
+Runs on GitHub Actions every 15 minutes. No server, no database, no paid APIs.
 
 ---
 
@@ -45,7 +45,7 @@ Runs on GitHub Actions every 5 minutes. No server, no database, no paid APIs.
 Two independent triggers:
 
 1. **Price drop** — the listed price falls below the **lowest price ever recorded** for that
-   store + product. Not "lower than five minutes ago". This is what stops a price bouncing between
+   store + product. Not "lower than fifteen minutes ago". This is what stops a price bouncing between
    ₹33,990 and ₹34,809 from emailing you twice a day forever.
 2. **Card offer change** — the set of bank offers changes, e.g. HDFC goes from ₹1,250 to ₹2,271 off.
    The email lists every current card offer and the resulting effective price.
@@ -135,16 +135,18 @@ Set `cooldownHours` to `0` to be notified on every downward move (noisier, but a
 
 ```json
 "polling": {
-  "dji": 5,
+  "dji": 15,
   "flipkart": 15,
   "amazon": 15,
   "reliance": 15,
-  "croma": 30
+  "croma": 15
 }
 ```
 
-The workflow wakes every 5 minutes; this map decides which stores actually get fetched.
-Raise Flipkart to `30` if you ever start seeing bot-check failures in the logs.
+The workflow wakes every 15 minutes; this map decides which stores actually get fetched.
+A store is skipped if it was polled less than that many minutes ago, so the cron and the
+per-store cadence stay in step. Raise a value to `30` if you ever start seeing bot-check
+failures for that store in the logs.
 
 ### Adding a product
 
@@ -248,8 +250,8 @@ state/prices.json             persisted prices, watermarks, email budget
 
 ## Known limits
 
-- **Timing.** GitHub's minimum cron is 5 minutes, and scheduled runs are queued best-effort.
-  Expect drops to arrive 5–12 minutes after they happen, sometimes longer at peak times.
+- **Timing.** The workflow runs every 15 minutes, and scheduled runs are queued best-effort.
+  Expect drops to arrive 15-30 minutes after they happen, sometimes longer at peak times.
 - **Amazon.** Reliable now, but only through the mobile endpoint, and it is still scraping. A poll
   can spend up to five attempts before it gets a page; occasionally all five fail and that poll is
   logged as a miss (it is not treated as a price change, and three such polls in a row raise a

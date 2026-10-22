@@ -8,11 +8,11 @@
     "minSecondsBetweenEmails": 60
   },
   "polling": {
-    "dji": 5,
+    "dji": 15,
     "flipkart": 15,
     "amazon": 15,
     "reliance": 15,
-    "croma": 30
+    "croma": 15
   },
   "products": [
     {

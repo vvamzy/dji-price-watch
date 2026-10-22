@@ -13,7 +13,7 @@ const FORCE = argv.has('--force') || process.env.FORCE === '1';
 const JSON_OUT = argv.has('--json');
 
 // Persist state at most this often unless something actually happened.
-const MAX_STATE_AGE_MINUTES = 10;
+const MAX_STATE_AGE_MINUTES = 30;
 
 function log(msg) {
   console.log(msg);
