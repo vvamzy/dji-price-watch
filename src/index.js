@@ -27,6 +27,14 @@ async function main() {
 
   log(`DJI price watch · ${started.toISOString()}${CHECK ? ' · check only' : ''}${DRY_RUN ? ' · dry run' : ''}`);
 
+  if (argv.has('--test-email')) {
+    const email = buildEmail({ alerts: [], health: [], state, config, now: started });
+    email.subject = '✅ DJI price watch — Gmail/SMTP test';
+    await send(email);
+    log(`test email sent to ${process.env.ALERT_TO || process.env.GMAIL_USER}`);
+    return;
+  }
+
   const { observations, alerts, health, skipped } = await collect({ config, state, now: started, force: FORCE, log });
   log(summarise({ observations, alerts, health, skipped }));
 

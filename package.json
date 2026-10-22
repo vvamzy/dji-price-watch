@@ -11,6 +11,7 @@
     "start": "node src/index.js",
     "check": "node src/index.js --check",
     "dry": "node src/index.js --dry-run --force",
+    "test-email": "node src/index.js --test-email",
     "test": "node --test"
   },
   "dependencies": {

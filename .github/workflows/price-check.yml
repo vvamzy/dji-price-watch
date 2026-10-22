@@ -15,6 +15,10 @@ on:
         description: 'Ignore per-store poll cadence'
         type: boolean
         default: true
+      test_email:
+        description: 'Send a test email and exit (set dry_run to false)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -54,7 +58,7 @@ jobs:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           ALERT_TO: ${{ secrets.ALERT_TO }}
-        run: node src/index.js
+        run: node src/index.js ${{ inputs.test_email && '--test-email' || '' }}
 
       - name: Persist state
         if: env.DRY_RUN != '1'

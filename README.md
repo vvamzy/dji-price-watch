@@ -82,10 +82,12 @@ gh secret set ALERT_TO --repo vvamzy/dji-price-watch
 **Actions → price-check → Run workflow**, leave `dry_run` checked, press **Run**.
 It will scrape real prices, build the email, print the subject, and skip sending.
 
-When the log looks right, run it again with `dry_run` unchecked. The first real run records
-baselines and stays silent — that is intentional, since nothing has dropped yet.
+To confirm Gmail works, run again with `dry_run` **unchecked** and `test_email` **checked**.
+You should get one `✅ DJI price watch — Gmail/SMTP test` email. If it fails, the log shows the
+SMTP error code (usually a bad app password, or 2FA not enabled).
 
-The 5-minute schedule starts on its own after that first run.
+Then the 5-minute schedule takes over. It records baselines on the first real run and stays silent
+until something actually drops.
 
 ---
 
@@ -192,6 +194,7 @@ npm install
 npm test          # parser + diff unit tests, no network
 npm run check     # scrape live and print prices, no email
 npm run dry       # full logic against a temp copy of state, writes an HTML preview
+npm run test-email # send one test email (needs the three env vars below)
 ```
 
 `npm run dry` prints a path to the rendered email so you can check the design before trusting the cron.
