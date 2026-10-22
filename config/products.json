@@ -10,7 +10,9 @@
   "polling": {
     "dji": 5,
     "flipkart": 15,
-    "amazon": 15
+    "amazon": 15,
+    "reliance": 15,
+    "croma": 30
   },
   "products": [
     {
@@ -27,6 +29,17 @@
           "retailer": "amazon",
           "label": "Amazon.in",
           "url": "https://www.amazon.in/dp/B0C783YNW7"
+        },
+        {
+          "retailer": "reliance",
+          "label": "Reliance Digital",
+          "url": "https://www.reliancedigital.in/product/dji-osmo-action-4-standard-combo-action-camera-black-mr97hw-10261508"
+        },
+        {
+          "retailer": "croma",
+          "label": "Croma",
+          "optional": true,
+          "url": "https://www.croma.com/dji-osmo-action-4-standard-combo-4k-and-10mp-240-fps-waterproof-action-camera-with-eis-stabilisation-black-/p/301997"
         }
       ]
     },
@@ -49,6 +62,12 @@
           "retailer": "amazon",
           "label": "Amazon.in",
           "url": "https://www.amazon.in/dp/B0C783J9WC"
+        },
+        {
+          "retailer": "croma",
+          "label": "Croma",
+          "optional": true,
+          "url": "https://www.croma.com/dji-osmo-action-4-adventure-combo-4k-and-10mp-120-fps-waterproof-sports-action-camera-with-cmos-sensor-black-/p/311059"
         }
       ]
     },
@@ -67,6 +86,17 @@
           "retailer": "flipkart",
           "label": "Flipkart",
           "url": "https://www.flipkart.com/dji-osmo-nano-standard-combo-64gb-sports-action-camera/p/itm2e0744ef47a28"
+        },
+        {
+          "retailer": "reliance",
+          "label": "Reliance Digital",
+          "url": "https://www.reliancedigital.in/product/dji-osmo-nano-action-camera-64-gb-black-mv83b6-10780895"
+        },
+        {
+          "retailer": "croma",
+          "label": "Croma",
+          "optional": true,
+          "url": "https://www.croma.com/dji-osmo-nano-standard-combo-4k-and-35mp-240-fps-waterproof-action-camera-with-143-degree-wide-fov-black-/p/322004"
         }
       ]
     },
@@ -90,6 +120,12 @@
           "retailer": "amazon",
           "label": "Amazon.in",
           "url": "https://www.amazon.in/dp/B0DYD56G2Y"
+        },
+        {
+          "retailer": "croma",
+          "label": "Croma",
+          "optional": true,
+          "url": "https://www.croma.com/dji-osmo-nano-standard-combo-4k-and-35mp-240-fps-waterproof-action-camera-with-143-degree-wide-fov-black-/p/322003"
         }
       ]
     }

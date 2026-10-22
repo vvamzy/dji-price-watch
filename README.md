@@ -9,12 +9,12 @@ Runs on GitHub Actions every 5 minutes. No server, no database, no paid APIs.
 
 ## What it tracks
 
-| SKU | DJI India | Flipkart | Amazon.in |
-|---|---|---|---|
-| Osmo Action 4 Standard Combo | — | ✅ | ✅ |
-| Osmo Action 4 Adventure Combo | ✅ | ✅ | ✅ |
-| Osmo Nano 64GB | ✅ | ✅ | — (no listing found) |
-| Osmo Nano 128GB | ✅ | ✅ | ✅ |
+| SKU | DJI India | Flipkart | Amazon.in | Reliance Digital | Croma |
+|---|---|---|---|---|---|
+| Osmo Action 4 Standard Combo | — | ✅ | ✅ | ✅ | ✅ |
+| Osmo Action 4 Adventure Combo | ✅ | ✅ | ✅ | — (not listed) | ✅ |
+| Osmo Nano 64GB | ✅ | ✅ | — (no listing found) | ✅ | ✅ |
+| Osmo Nano 128GB | ✅ | ✅ | ✅ | — (not listed) | ✅ |
 
 - **DJI India** (`djiindiashop.com`, the official importer) is a Shopify store, so prices come from
   its public product JSON. Most reliable source.
@@ -24,7 +24,19 @@ Runs on GitHub Actions every 5 minutes. No server, no database, no paid APIs.
   successes out of nine measured attempts — while the mobile page answers roughly two times in
   three. Each poll therefore retries up to five times with jitter, which puts the effective failure
   rate under 1%. The price is read from the embedded `"priceAmount"` field; the visible
-  `.a-offscreen` element holds the MRP and is deliberately ignored.
+  `.a-offscreen` element holds the MRP and is deliberately ignored. Card offers come from the
+  buybox `smx` widget: the best **full-payment** card discount (e.g. Amazon Pay ICICI) is used,
+  cashback is shown as a note, and EMI plans are excluded because they are not a discount.
+- **Reliance Digital** (`reliancedigital.in`) publishes a clean schema.org `Product` block with
+  price and availability, so it is parsed the same way as Flipkart. No card offers are exposed as
+  structured data, so none are reported.
+- **Croma** (`croma.com`) also publishes a `Product` block, but it is not strictly valid JSON, so
+  a tolerant parser reads the first `Offer` price. Croma is fronted by Akamai and is the most
+  likely source to see a bot check; it is marked `optional: true`, so a blocked poll is logged but
+  never raises a health email. Its "Upto 5% off on NeuCard" teaser is a percentage with no cap, so
+  it is deliberately not counted as a bank discount.
+- **Vijay Sales** is not tracked: its catalogue is rendered client-side through Unbxd, so product
+  pages are not discoverable or readable with plain HTTP from a runner.
 
 ---
 
@@ -125,7 +137,9 @@ Set `cooldownHours` to `0` to be notified on every downward move (noisier, but a
 "polling": {
   "dji": 5,
   "flipkart": 15,
-  "amazon": 15
+  "amazon": 15,
+  "reliance": 15,
+  "croma": 30
 }
 ```
 
@@ -157,10 +171,11 @@ Append to the `products` array:
 ```
 
 - `id` must be unique — it is the key in the state file. Renaming it resets that product's history.
-- `retailer` must be `dji`, `flipkart` or `amazon`.
+- `retailer` must be `dji`, `flipkart`, `amazon`, `reliance` or `croma`.
 - `variant` (optional) picks a Shopify variant by its title, e.g. `"64 GB"`.
-- `optional: true` means failures are logged but never emailed as a health problem. All current
-  sources are required, since every adapter now retries internally.
+- `optional: true` means failures are logged but never emailed as a health problem. Used for Croma
+  because Akamai occasionally blocks datacenter IPs; every other source is required and retries
+  internally.
 - `label` is the text shown in the email.
 
 ### Removing a source
@@ -219,9 +234,12 @@ src/lib/diff.js               watermark logic
 src/lib/report.js             HTML/text email builder
 src/lib/mailer.js             Gmail SMTP transport
 src/lib/state.js              state load/save helpers
+src/lib/jsonld.js             tolerant schema.org Product extractor
 src/sources/dji.js            Shopify JSON adapter
 src/sources/flipkart.js       JSON-LD + bankOfferGrid adapter
 src/sources/amazon.js         mobile-endpoint ASIN adapter (retrying)
+src/sources/reliance.js       schema.org adapter
+src/sources/croma.js          schema.org adapter (malformed JSON-LD)
 state/prices.json             persisted prices, watermarks, email budget
 .github/workflows/price-check.yml   the 5-minute cron
 ```
@@ -239,6 +257,9 @@ state/prices.json             persisted prices, watermarks, email budget
   its API now starts around €49/month, not the €19/year quoted in older guides.
 - **Flipkart.** The listed price is tracked, not EMI, exchange, or coupon discounts. Bank/card
   offers are tracked separately because they are the ones that reliably stack.
+- **Reliance Digital / Croma.** Listed price only. Neither exposes a structured card-offer list,
+  so their rows show `—` for bank offers.
+- **Vijay Sales.** Not supported; see above.
 - **Public repo.** Prices and state commits are public. Credentials are not — they live only in
   Actions secrets and are masked in logs.
 - **Gmail.** App passwords require 2FA. The 12/day cap exists because sending from constantly
