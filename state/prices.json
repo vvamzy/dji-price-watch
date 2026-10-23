@@ -10,30 +10,30 @@
           "available": true,
           "watermark": 22990,
           "lowestEver": 22990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
-          "lastAlertAt": null,
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
+          "lastAlertAt": "2026-10-23T15:55:48.546Z",
           "fails": 0,
           "lastError": null,
           "bankOffers": [
             {
-              "bank": "HDFC",
-              "discount": 1250
+              "bank": "Flipkart Axis",
+              "discount": 1862
             },
             {
-              "bank": "Flipkart Axis",
-              "discount": 1150
+              "bank": "HDFC",
+              "discount": 1250
             },
             {
               "bank": "Flipkart SBI",
               "discount": 1150
             }
           ],
-          "bestBankDiscount": 1250,
-          "effectivePrice": 21740,
-          "bankHash": "1672e322b1bb",
-          "effectiveWatermark": 21740,
-          "effectiveLow": 21740
+          "bestBankDiscount": 1862,
+          "effectivePrice": 21128,
+          "bankHash": "0148e6a2f777",
+          "effectiveWatermark": 21128,
+          "effectiveLow": 21128
         },
         "amazon": {
           "price": 22990,
@@ -42,8 +42,8 @@
           "available": true,
           "watermark": 22990,
           "lowestEver": 22990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
           "lastAlertAt": "2026-10-22T19:43:32.442Z",
           "fails": 0,
           "lastError": null,
@@ -67,8 +67,8 @@
           "available": true,
           "watermark": 22990,
           "lowestEver": 22990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
           "lastAlertAt": "2026-10-23T06:01:37.254Z",
           "fails": 0,
           "lastError": null,
@@ -86,8 +86,8 @@
           "available": true,
           "watermark": 22990,
           "lowestEver": 22990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -109,8 +109,8 @@
           "available": true,
           "watermark": 31990,
           "lowestEver": 31990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -126,15 +126,15 @@
           "available": true,
           "watermark": 31990,
           "lowestEver": 31990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
-          "lastAlertAt": null,
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
+          "lastAlertAt": "2026-10-23T15:55:48.546Z",
           "fails": 0,
           "lastError": null,
           "bankOffers": [
             {
               "bank": "Flipkart Axis",
-              "discount": 2350
+              "discount": 3775
             },
             {
               "bank": "HDFC",
@@ -145,11 +145,11 @@
               "discount": 1600
             }
           ],
-          "bestBankDiscount": 2350,
-          "effectivePrice": 29640,
-          "bankHash": "cbe99b05136e",
-          "effectiveWatermark": 29640,
-          "effectiveLow": 29640
+          "bestBankDiscount": 3775,
+          "effectivePrice": 28215,
+          "bankHash": "a5a08304515f",
+          "effectiveWatermark": 28215,
+          "effectiveLow": 28215
         },
         "amazon": {
           "price": 31990,
@@ -158,8 +158,8 @@
           "available": true,
           "watermark": 31990,
           "lowestEver": 31990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
           "lastAlertAt": "2026-10-22T19:43:32.442Z",
           "fails": 0,
           "lastError": null,
@@ -193,8 +193,8 @@
           "available": true,
           "watermark": 31990,
           "lowestEver": 31990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -216,8 +216,8 @@
           "available": true,
           "watermark": 29990,
           "lowestEver": 29990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -233,15 +233,15 @@
           "available": true,
           "watermark": 28990,
           "lowestEver": 28990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
-          "lastAlertAt": null,
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
+          "lastAlertAt": "2026-10-23T15:55:48.546Z",
           "fails": 0,
           "lastError": null,
           "bankOffers": [
             {
               "bank": "Flipkart Axis",
-              "discount": 2200
+              "discount": 3625
             },
             {
               "bank": "HDFC",
@@ -252,11 +252,11 @@
               "discount": 1450
             }
           ],
-          "bestBankDiscount": 2200,
-          "effectivePrice": 26790,
-          "bankHash": "7620fde36620",
-          "effectiveWatermark": 26790,
-          "effectiveLow": 26790
+          "bestBankDiscount": 3625,
+          "effectivePrice": 25365,
+          "bankHash": "156b18d110c2",
+          "effectiveWatermark": 25365,
+          "effectiveLow": 25365
         },
         "reliance": {
           "price": 28990,
@@ -265,8 +265,8 @@
           "available": true,
           "watermark": 28990,
           "lowestEver": 28990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
           "lastAlertAt": "2026-10-23T06:01:37.254Z",
           "fails": 0,
           "lastError": null,
@@ -284,8 +284,8 @@
           "available": true,
           "watermark": 28990,
           "lowestEver": 28990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -307,8 +307,8 @@
           "available": true,
           "watermark": 34990,
           "lowestEver": 34990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -324,15 +324,15 @@
           "available": true,
           "watermark": 33990,
           "lowestEver": 33990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
-          "lastAlertAt": null,
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
+          "lastAlertAt": "2026-10-23T15:55:48.546Z",
           "fails": 0,
           "lastError": null,
           "bankOffers": [
             {
               "bank": "Flipkart Axis",
-              "discount": 2450
+              "discount": 3875
             },
             {
               "bank": "HDFC",
@@ -343,11 +343,11 @@
               "discount": 1700
             }
           ],
-          "bestBankDiscount": 2450,
-          "effectivePrice": 31540,
-          "bankHash": "8c2710e561a8",
-          "effectiveWatermark": 31540,
-          "effectiveLow": 31540
+          "bestBankDiscount": 3875,
+          "effectivePrice": 30115,
+          "bankHash": "9e520610194e",
+          "effectiveWatermark": 30115,
+          "effectiveLow": 30115
         },
         "amazon": {
           "price": 33990,
@@ -356,8 +356,8 @@
           "available": true,
           "watermark": 33990,
           "lowestEver": 33990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
           "lastAlertAt": "2026-10-22T19:43:32.442Z",
           "fails": 0,
           "lastError": null,
@@ -381,8 +381,8 @@
           "available": true,
           "watermark": 33990,
           "lowestEver": 33990,
-          "lastSeenAt": "2026-10-23T11:35:05.316Z",
-          "lastPolledAt": "2026-10-23T11:35:05.316Z",
+          "lastSeenAt": "2026-10-23T15:55:48.546Z",
+          "lastPolledAt": "2026-10-23T15:55:48.546Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -398,12 +398,12 @@
   },
   "meta": {
     "createdAt": "2026-10-22T18:56:10.262Z",
-    "lastRunAt": "2026-10-23T11:35:05.316Z",
-    "lastCommitAt": "2026-10-23T11:35:05.316Z",
+    "lastRunAt": "2026-10-23T15:55:48.546Z",
+    "lastCommitAt": "2026-10-23T15:55:48.546Z",
     "sent": {
       "date": "2026-10-23",
-      "count": 2,
-      "lastSentAt": "2026-10-23T06:01:37.254Z"
+      "count": 3,
+      "lastSentAt": "2026-10-23T15:55:48.546Z"
     },
     "healthAlerted": {}
   }
