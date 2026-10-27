@@ -10,28 +10,28 @@
           "available": true,
           "watermark": 22990,
           "lowestEver": 22990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
-          "lastAlertAt": "2026-10-24T17:19:24.305Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
+          "lastAlertAt": "2026-10-27T21:04:49.964Z",
           "fails": 0,
           "lastError": null,
           "bankOffers": [
             {
-              "bank": "HDFC",
-              "discount": 1250
+              "bank": "Flipkart SBI",
+              "discount": 1625
+            },
+            {
+              "bank": "SBI",
+              "discount": 1500
             },
             {
               "bank": "Flipkart Axis",
               "discount": 1150
-            },
-            {
-              "bank": "Flipkart SBI",
-              "discount": 1150
             }
           ],
-          "bestBankDiscount": 1250,
-          "effectivePrice": 21740,
-          "bankHash": "1672e322b1bb",
+          "bestBankDiscount": 1625,
+          "effectivePrice": 21365,
+          "bankHash": "5503aacbd79d",
           "effectiveWatermark": 21128,
           "effectiveLow": 21128
         },
@@ -42,23 +42,23 @@
           "available": true,
           "watermark": 22990,
           "lowestEver": 22990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
-          "lastAlertAt": "2026-10-22T19:43:32.442Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
+          "lastAlertAt": "2026-10-27T21:04:49.964Z",
           "fails": 0,
           "lastError": null,
-          "effectivePrice": 22332,
-          "bankHash": "49374c39b2dc",
-          "effectiveWatermark": 22332,
-          "effectiveLow": 22332,
+          "effectivePrice": 22301,
+          "bankHash": "186cb96e0e3c",
+          "effectiveWatermark": 22301,
+          "effectiveLow": 22301,
           "bankOffers": [
             {
               "bank": "Amazon Pay ICICI Bank Credit Card",
-              "discount": 658,
-              "note": "+ ₹670 cashback"
+              "discount": 689,
+              "note": ""
             }
           ],
-          "bestBankDiscount": 658
+          "bestBankDiscount": 689
         },
         "reliance": {
           "price": 22990,
@@ -67,8 +67,8 @@
           "available": true,
           "watermark": 22990,
           "lowestEver": 22990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
           "lastAlertAt": "2026-10-23T06:01:37.254Z",
           "fails": 0,
           "lastError": null,
@@ -86,8 +86,8 @@
           "available": true,
           "watermark": 22990,
           "lowestEver": 22990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -109,8 +109,8 @@
           "available": true,
           "watermark": 31990,
           "lowestEver": 31990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -126,9 +126,9 @@
           "available": true,
           "watermark": 31990,
           "lowestEver": 31990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
-          "lastAlertAt": "2026-10-24T17:19:24.305Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
+          "lastAlertAt": "2026-10-27T21:04:49.964Z",
           "fails": 0,
           "lastError": null,
           "bankOffers": [
@@ -137,17 +137,17 @@
               "discount": 3062
             },
             {
-              "bank": "HDFC",
-              "discount": 1750
+              "bank": "Flipkart SBI",
+              "discount": 2075
             },
             {
-              "bank": "Flipkart SBI",
-              "discount": 1600
+              "bank": "SBI",
+              "discount": 2000
             }
           ],
           "bestBankDiscount": 3062,
           "effectivePrice": 28928,
-          "bankHash": "ece7abc38e9e",
+          "bankHash": "549d9a5220da",
           "effectiveWatermark": 28215,
           "effectiveLow": 28215
         },
@@ -158,33 +158,23 @@
           "available": true,
           "watermark": 31990,
           "lowestEver": 31990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
-          "lastAlertAt": "2026-10-26T11:03:55.861Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
+          "lastAlertAt": "2026-10-27T21:04:49.964Z",
           "fails": 0,
           "lastError": null,
-          "effectivePrice": 29240,
-          "bankHash": "38675657d277",
+          "effectivePrice": 31031,
+          "bankHash": "1fa966e546f8",
           "effectiveWatermark": 29240,
           "effectiveLow": 29240,
           "bankOffers": [
             {
               "bank": "Amazon Pay ICICI Bank Credit Card",
-              "discount": 2750,
-              "note": ""
-            },
-            {
-              "bank": "Axis Bank Credit Card",
-              "discount": 2750,
-              "note": ""
-            },
-            {
-              "bank": "ICICI Bank Credit Card",
-              "discount": 2750,
+              "discount": 959,
               "note": ""
             }
           ],
-          "bestBankDiscount": 2750
+          "bestBankDiscount": 959
         },
         "croma": {
           "price": 31990,
@@ -193,8 +183,8 @@
           "available": true,
           "watermark": 31990,
           "lowestEver": 31990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -216,8 +206,8 @@
           "available": true,
           "watermark": 29990,
           "lowestEver": 29990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -233,9 +223,9 @@
           "available": true,
           "watermark": 28990,
           "lowestEver": 28990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
-          "lastAlertAt": "2026-10-24T17:19:24.305Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
+          "lastAlertAt": "2026-10-27T21:04:49.964Z",
           "fails": 0,
           "lastError": null,
           "bankOffers": [
@@ -244,17 +234,21 @@
               "discount": 2912
             },
             {
-              "bank": "HDFC",
-              "discount": 1750
+              "bank": "SBI",
+              "discount": 2000
             },
             {
               "bank": "Flipkart SBI",
-              "discount": 1450
+              "discount": 1925
+            },
+            {
+              "bank": "MULTIBANK",
+              "discount": 500
             }
           ],
           "bestBankDiscount": 2912,
           "effectivePrice": 26078,
-          "bankHash": "92560fa117f6",
+          "bankHash": "8647421f3c6f",
           "effectiveWatermark": 25365,
           "effectiveLow": 25365
         },
@@ -265,8 +259,8 @@
           "available": true,
           "watermark": 28990,
           "lowestEver": 28990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
           "lastAlertAt": "2026-10-23T06:01:37.254Z",
           "fails": 0,
           "lastError": null,
@@ -284,8 +278,8 @@
           "available": true,
           "watermark": 28990,
           "lowestEver": 28990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -307,8 +301,8 @@
           "available": true,
           "watermark": 34990,
           "lowestEver": 34990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -324,9 +318,9 @@
           "available": true,
           "watermark": 33990,
           "lowestEver": 33990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
-          "lastAlertAt": "2026-10-24T17:19:24.305Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
+          "lastAlertAt": "2026-10-27T21:04:49.964Z",
           "fails": 0,
           "lastError": null,
           "bankOffers": [
@@ -335,17 +329,21 @@
               "discount": 3162
             },
             {
-              "bank": "HDFC",
-              "discount": 1750
+              "bank": "Flipkart SBI",
+              "discount": 2175
             },
             {
-              "bank": "Flipkart SBI",
-              "discount": 1700
+              "bank": "SBI",
+              "discount": 2000
+            },
+            {
+              "bank": "MULTIBANK",
+              "discount": 500
             }
           ],
           "bestBankDiscount": 3162,
           "effectivePrice": 30828,
-          "bankHash": "793c709678d7",
+          "bankHash": "ddcc988c0da6",
           "effectiveWatermark": 30115,
           "effectiveLow": 30115
         },
@@ -356,8 +354,8 @@
           "available": true,
           "watermark": 33990,
           "lowestEver": 33990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
           "lastAlertAt": "2026-10-22T19:43:32.442Z",
           "fails": 0,
           "lastError": null,
@@ -381,8 +379,8 @@
           "available": true,
           "watermark": 33990,
           "lowestEver": 33990,
-          "lastSeenAt": "2026-10-27T16:46:20.096Z",
-          "lastPolledAt": "2026-10-27T16:46:20.096Z",
+          "lastSeenAt": "2026-10-27T21:04:49.964Z",
+          "lastPolledAt": "2026-10-27T21:04:49.964Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -398,12 +396,12 @@
   },
   "meta": {
     "createdAt": "2026-10-22T18:56:10.262Z",
-    "lastRunAt": "2026-10-27T16:46:20.096Z",
-    "lastCommitAt": "2026-10-27T16:46:20.096Z",
+    "lastRunAt": "2026-10-27T21:04:49.964Z",
+    "lastCommitAt": "2026-10-27T21:04:49.964Z",
     "sent": {
-      "date": "2026-10-26",
+      "date": "2026-10-28",
       "count": 1,
-      "lastSentAt": "2026-10-26T11:03:55.861Z"
+      "lastSentAt": "2026-10-27T21:04:49.964Z"
     },
     "healthAlerted": {}
   }
