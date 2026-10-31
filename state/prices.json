@@ -10,9 +10,9 @@
           "available": true,
           "watermark": 22990,
           "lowestEver": 22990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
-          "lastAlertAt": "2026-10-27T21:04:49.964Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
+          "lastAlertAt": "2026-10-31T20:42:21.018Z",
           "fails": 0,
           "lastError": null,
           "bankOffers": [
@@ -22,7 +22,7 @@
             },
             {
               "bank": "SBI",
-              "discount": 1500
+              "discount": 1250
             },
             {
               "bank": "Flipkart Axis",
@@ -31,7 +31,7 @@
           ],
           "bestBankDiscount": 1625,
           "effectivePrice": 21365,
-          "bankHash": "5503aacbd79d",
+          "bankHash": "07f48f1730f6",
           "effectiveWatermark": 21128,
           "effectiveLow": 21128
         },
@@ -42,8 +42,8 @@
           "available": true,
           "watermark": 22990,
           "lowestEver": 22990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
           "lastAlertAt": "2026-10-27T21:04:49.964Z",
           "fails": 0,
           "lastError": null,
@@ -68,9 +68,9 @@
           "watermark": 22990,
           "lowestEver": 22990,
           "lastSeenAt": "2026-10-28T12:49:02.338Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
           "lastAlertAt": "2026-10-23T06:01:37.254Z",
-          "fails": 15,
+          "fails": 16,
           "lastError": "HTTP 403 for www.reliancedigital.in",
           "bankOffers": [],
           "bestBankDiscount": 0,
@@ -86,8 +86,8 @@
           "available": true,
           "watermark": 22990,
           "lowestEver": 22990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -109,8 +109,8 @@
           "available": true,
           "watermark": 31990,
           "lowestEver": 31990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -126,9 +126,9 @@
           "available": true,
           "watermark": 31990,
           "lowestEver": 31990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
-          "lastAlertAt": "2026-10-29T15:23:11.246Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
+          "lastAlertAt": "2026-10-31T20:42:21.018Z",
           "fails": 0,
           "lastError": null,
           "bankOffers": [
@@ -138,7 +138,7 @@
             },
             {
               "bank": "SBI",
-              "discount": 2000
+              "discount": 1750
             },
             {
               "bank": "Flipkart Axis",
@@ -147,7 +147,7 @@
           ],
           "bestBankDiscount": 2075,
           "effectivePrice": 29915,
-          "bankHash": "60579e415bfd",
+          "bankHash": "d4e1a162b0ed",
           "effectiveWatermark": 28215,
           "effectiveLow": 28215
         },
@@ -158,8 +158,8 @@
           "available": true,
           "watermark": 31990,
           "lowestEver": 31990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
           "lastAlertAt": "2026-10-31T13:07:31.679Z",
           "fails": 0,
           "lastError": null,
@@ -193,8 +193,8 @@
           "available": true,
           "watermark": 31990,
           "lowestEver": 31990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -216,8 +216,8 @@
           "available": true,
           "watermark": 29990,
           "lowestEver": 29990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -233,19 +233,19 @@
           "available": true,
           "watermark": 28990,
           "lowestEver": 28990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
-          "lastAlertAt": "2026-10-30T11:39:44.778Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
+          "lastAlertAt": "2026-10-31T20:42:21.018Z",
           "fails": 0,
           "lastError": null,
           "bankOffers": [
             {
-              "bank": "SBI",
-              "discount": 2000
-            },
-            {
               "bank": "Flipkart SBI",
               "discount": 1925
+            },
+            {
+              "bank": "SBI",
+              "discount": 1750
             },
             {
               "bank": "Flipkart Axis",
@@ -256,9 +256,9 @@
               "discount": 500
             }
           ],
-          "bestBankDiscount": 2000,
-          "effectivePrice": 26990,
-          "bankHash": "de7e7f102dfa",
+          "bestBankDiscount": 1925,
+          "effectivePrice": 27065,
+          "bankHash": "7e3d09519c76",
           "effectiveWatermark": 25365,
           "effectiveLow": 25365
         },
@@ -270,9 +270,9 @@
           "watermark": 28990,
           "lowestEver": 28990,
           "lastSeenAt": "2026-10-28T12:49:02.338Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
           "lastAlertAt": "2026-10-23T06:01:37.254Z",
-          "fails": 15,
+          "fails": 16,
           "lastError": "HTTP 403 for www.reliancedigital.in",
           "bankOffers": [],
           "bestBankDiscount": 0,
@@ -288,8 +288,8 @@
           "available": true,
           "watermark": 28990,
           "lowestEver": 28990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -311,8 +311,8 @@
           "available": true,
           "watermark": 34990,
           "lowestEver": 34990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -328,9 +328,9 @@
           "available": true,
           "watermark": 33990,
           "lowestEver": 33990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
-          "lastAlertAt": "2026-10-30T11:39:44.778Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
+          "lastAlertAt": "2026-10-31T20:42:21.018Z",
           "fails": 0,
           "lastError": null,
           "bankOffers": [
@@ -340,7 +340,7 @@
             },
             {
               "bank": "SBI",
-              "discount": 2000
+              "discount": 1750
             },
             {
               "bank": "Flipkart Axis",
@@ -353,7 +353,7 @@
           ],
           "bestBankDiscount": 2175,
           "effectivePrice": 31815,
-          "bankHash": "36d214c9ffe3",
+          "bankHash": "09fb5a6bcbce",
           "effectiveWatermark": 30115,
           "effectiveLow": 30115
         },
@@ -364,8 +364,8 @@
           "available": true,
           "watermark": 33990,
           "lowestEver": 33990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
           "lastAlertAt": "2026-10-22T19:43:32.442Z",
           "fails": 0,
           "lastError": null,
@@ -389,8 +389,8 @@
           "available": true,
           "watermark": 33990,
           "lowestEver": 33990,
-          "lastSeenAt": "2026-10-31T17:43:11.871Z",
-          "lastPolledAt": "2026-10-31T17:43:11.871Z",
+          "lastSeenAt": "2026-10-31T20:42:21.018Z",
+          "lastPolledAt": "2026-10-31T20:42:21.018Z",
           "lastAlertAt": null,
           "fails": 0,
           "lastError": null,
@@ -406,12 +406,12 @@
   },
   "meta": {
     "createdAt": "2026-10-22T18:56:10.262Z",
-    "lastRunAt": "2026-10-31T17:43:11.871Z",
-    "lastCommitAt": "2026-10-31T17:43:11.871Z",
+    "lastRunAt": "2026-10-31T20:42:21.018Z",
+    "lastCommitAt": "2026-10-31T20:42:21.018Z",
     "sent": {
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "count": 1,
-      "lastSentAt": "2026-10-31T13:07:31.679Z"
+      "lastSentAt": "2026-10-31T20:42:21.018Z"
     },
     "healthAlerted": {
       "action4-standard:reliance": "2026-10-29T02:02:45.759Z",
