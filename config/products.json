@@ -11,7 +11,7 @@
     "dji": 15,
     "flipkart": 15,
     "amazon": 15,
-    "reliance": 15,
+    "reliance": 30,
     "croma": 15
   },
   "products": [
@@ -33,7 +33,8 @@
         {
           "retailer": "reliance",
           "label": "Reliance Digital",
-          "url": "https://www.reliancedigital.in/product/dji-osmo-action-4-standard-combo-action-camera-black-mr97hw-10261508"
+          "url": "https://www.reliancedigital.in/product/dji-osmo-action-4-standard-combo-action-camera-black-mr97hw-10261508",
+          "optional": true
         },
         {
           "retailer": "croma",
@@ -90,7 +91,8 @@
         {
           "retailer": "reliance",
           "label": "Reliance Digital",
-          "url": "https://www.reliancedigital.in/product/dji-osmo-nano-action-camera-64-gb-black-mv83b6-10780895"
+          "url": "https://www.reliancedigital.in/product/dji-osmo-nano-action-camera-64-gb-black-mv83b6-10780895",
+          "optional": true
         },
         {
           "retailer": "croma",

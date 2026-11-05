@@ -1,5 +1,8 @@
 # dji-price-watch
 
+> **Retired 2026-11-06.** The camera has been bought, so the scheduled run is switched off.
+> The code is kept as-is and the workflow can still be started manually from the Actions tab.
+
 Watches DJI **Osmo Action 4** and **Osmo Nano** prices in India and emails you the moment
 something gets cheaper — either the listed price or the bank/card offer stacked on top of it.
 
@@ -29,7 +32,10 @@ Runs on GitHub Actions every 15 minutes. No server, no database, no paid APIs.
   cashback is shown as a note, and EMI plans are excluded because they are not a discount.
 - **Reliance Digital** (`reliancedigital.in`) publishes a clean schema.org `Product` block with
   price and availability, so it is parsed the same way as Flipkart. No card offers are exposed as
-  structured data, so none are reported.
+  structured data, so none are reported. It worked from runners until 28 Oct 2026, then started
+  answering `HTTP 403` to GitHub's IP range; it is now `optional: true` and polled every 30
+  minutes, so a blocked poll is logged instead of raising a health email. It still works from a
+  residential IP.
 - **Croma** (`croma.com`) also publishes a `Product` block, but it is not strictly valid JSON, so
   a tolerant parser reads the first `Offer` price. Croma is fronted by Akamai and is the most
   likely source to see a bot check; it is marked `optional: true`, so a blocked poll is logged but
@@ -138,7 +144,7 @@ Set `cooldownHours` to `0` to be notified on every downward move (noisier, but a
   "dji": 15,
   "flipkart": 15,
   "amazon": 15,
-  "reliance": 15,
+  "reliance": 30,
   "croma": 15
 }
 ```
@@ -250,8 +256,9 @@ state/prices.json             persisted prices, watermarks, email budget
 
 ## Known limits
 
-- **Timing.** The workflow runs every 15 minutes, and scheduled runs are queued best-effort.
-  Expect drops to arrive 15-30 minutes after they happen, sometimes longer at peak times.
+- **Timing.** The workflow is scheduled every 15 minutes, but GitHub runs scheduled workflows
+  best-effort. In practice this repo saw about 4-5 runs per day (median gap ~4.8 hours), so treat
+  15 minutes as a floor, not a guarantee.
 - **Amazon.** Reliable now, but only through the mobile endpoint, and it is still scraping. A poll
   can spend up to five attempts before it gets a page; occasionally all five fail and that poll is
   logged as a miss (it is not treated as a price change, and three such polls in a row raise a

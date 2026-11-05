@@ -29,8 +29,9 @@ export function buildSubject(alerts, health) {
   }
   if (drops.length === 0 && banks.length >= 1) {
     const b = banks[0];
-    const amounts = banks.map((x) => coin(x.to)).join(', ');
-    return `💳 Bank offer updated — ${b.product.short} (${b.offer.label}): ${amounts} off`;
+    const best = Math.max(...banks.map((x) => x.to));
+    const label = best > 0 ? `${coin(best)} off` : 'card offers cleared';
+    return `💳 Bank offer updated — ${b.product.short} (${b.offer.label}): ${label}`;
   }
   if (drops.length >= 1 && banks.length >= 1) {
     return `🔻 ${drops.length} drop${drops.length > 1 ? 's' : ''} + 💳 ${banks.length} card offer change — DJI price watch`;

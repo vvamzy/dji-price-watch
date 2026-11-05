@@ -1,21 +1,18 @@
 name: price-check
 
 on:
-  schedule:
-    # Every 15 minutes. GitHub's floor is 5, but the schedule is best-effort
-    # and often a few minutes late under load. Per-store cadence is enforced
-    # in code.
-    - cron: '*/15 * * * *'
+  # Schedule removed 2026-11-06: the camera was purchased and tracking is no
+  # longer needed. The workflow is manual-only now (Actions -> price-check).
   workflow_dispatch:
     inputs:
       dry_run:
         description: 'Run without sending email or writing state'
         type: boolean
-        default: true
+        default: false
       force:
         description: 'Ignore per-store poll cadence'
         type: boolean
-        default: true
+        default: false
       test_email:
         description: 'Send a test email and exit (set dry_run to false)'
         type: boolean
